@@ -19,7 +19,7 @@ function IntroEng() {
               <div className="bar"></div>
             </div>
             <h3 className="title">
-              Based in Buenos Aires, i'm a Full Stack Web Developer.
+              Based in Buenos Aires, I'm a Full Stack Web Developer.
             </h3>
             <div className="text">
               I'm specialized at building web apps with React.js, Node.js and

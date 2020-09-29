@@ -104,7 +104,7 @@ body {
   color: var(--text-color); }
 
 .resume-contact {
-  font-size: 2.35rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--color-tertiary); }
 
@@ -112,13 +112,44 @@ body {
   position: absolute;
   bottom: 0; }
 
+.title-main-color {
+  color: var(--color-secondary);
+  min-width: auto; }
+
+.bar-small {
+  width: 4rem;
+  background-color: var(--color-secondary); }
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: 500; }
+  .btn:hover {
+    color: white; }
+
+.about-contact {
+  text-decoration: underline; }
+
+.envelope-icon,
+.envelope-icon:link,
+.envelope-icon:visited {
+  margin-left: 1.5rem;
+  color: var(--color-tertiary);
+  text-decoration: underline; }
+  .envelope-icon:hover,
+  .envelope-icon:link:hover,
+  .envelope-icon:visited:hover {
+    cursor: pointer; }
+
 .intro {
   background-color: var(--color-primary);
-  padding-bottom: 10rem; }
+  padding-bottom: 12rem; }
 
 .about {
   background-color: var(--color-primary-dark);
-  padding: 10rem 0; }
+  padding: 13rem 0; }
 
 .nav {
   display: flex;
@@ -144,6 +175,16 @@ body {
   align-items: center;
   margin-bottom: 1.5rem; }
 
+.about-info-section {
+  max-width: 66rem; }
+
+.about-content {
+  display: flex; }
+
+.about-contact-info {
+  margin-left: auto;
+  max-width: 40rem; }
+
 .u-unselectable-text {
   -webkit-user-select: none;
   /* Safari */
@@ -156,3 +197,6 @@ body {
 
 .u-no-margin {
   margin: 0 !important; }
+
+.u-no-decoration {
+  text-decoration: none; }

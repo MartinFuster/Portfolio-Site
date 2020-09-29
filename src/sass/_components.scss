@@ -90,7 +90,7 @@
 }
 
 .resume-contact {
-  font-size: 2.35rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--color-tertiary);
 }
@@ -98,4 +98,42 @@
 .arrow {
   position: absolute;
   bottom: 0;
+}
+
+.title-main-color {
+  color: var(--color-secondary);
+  min-width: auto;
+}
+
+.bar-small {
+  width: 4rem;
+  background-color: var(--color-secondary);
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-secondary);
+  color: white;
+  font-weight: 500;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.about-contact {
+  text-decoration: underline;
+}
+
+.envelope-icon,
+.envelope-icon:link,
+.envelope-icon:visited {
+  margin-left: 1.5rem;
+  color: var(--color-tertiary);
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

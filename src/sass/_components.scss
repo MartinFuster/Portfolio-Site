@@ -1,0 +1,101 @@
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.link-box {
+  margin-right: 3rem;
+  transition: all 0.25s linear;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color-secondary);
+  }
+}
+
+.main-box {
+  background-color: var(--color-secondary);
+  padding: 0.5rem 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.language-changer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-secondary);
+  padding: 0.75rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.down-icon {
+  margin-left: 0.75rem;
+  font-size: 1rem;
+}
+
+.name-content {
+  position: relative;
+  color: white;
+  font-size: 14rem;
+  font-weight: 700;
+  max-width: 60rem;
+  line-height: 13.5rem;
+  margin-top: 15rem;
+}
+
+.last-name {
+  margin-left: 12rem;
+}
+
+.small-title-alt {
+  min-width: 20rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-tertiary);
+}
+
+.bar {
+  height: 1px;
+  width: 100%;
+  margin-left: 2rem;
+  background-color: var(--color-tertiary);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.text {
+  font-size: 2.35rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.resume-contact {
+  font-size: 2.35rem;
+  margin-bottom: 1rem;
+  color: var(--color-tertiary);
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+}

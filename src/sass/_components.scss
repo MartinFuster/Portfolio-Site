@@ -179,3 +179,27 @@
 .carousel-item {
   transition: all 0.8s ease-in-out;
 }
+
+.plane-tablet {
+  width: 74rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.ig-link,
+.ig-link:visited,
+.ig-link:link {
+  color: var(--color-secondary) !important;
+  transition: all 0.25s linear;
+  &:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    text-decoration: none;
+  }
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}

@@ -178,6 +178,27 @@ body {
 .carousel-item {
   transition: all 0.8s ease-in-out; }
 
+.plane-tablet {
+  width: 74rem; }
+
+.underline {
+  text-decoration: underline; }
+
+.ig-link,
+.ig-link:visited,
+.ig-link:link {
+  color: var(--color-secondary) !important;
+  transition: all 0.25s linear; }
+  .ig-link:hover,
+  .ig-link:visited:hover,
+  .ig-link:link:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+    text-decoration: none; }
+
+.color-secondary {
+  color: var(--color-secondary); }
+
 .intro {
   position: relative;
   background-color: var(--color-primary);
@@ -257,6 +278,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.design {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-primary-dark);
+  padding: 8rem 0;
+  min-height: 100vh; }
+
+.content-design {
+  display: flex;
+  align-items: center; }
+
+.info-section-design {
+  margin-right: 4rem; }
 
 .u-unselectable-text {
   -webkit-user-select: none;

@@ -112,3 +112,29 @@
 .info-section-design {
   margin-right: 4rem;
 }
+
+.contact {
+  padding: 8rem 0;
+  background-color: var(--color-primary);
+}
+
+.contact-content {
+  display: flex;
+}
+
+.info-box {
+  display: flex;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  margin-left: auto;
+}
+
+.input-box {
+  display: flex;
+}

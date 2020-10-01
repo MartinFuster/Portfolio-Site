@@ -3,6 +3,7 @@ import IntroEng from "./IntroEng";
 import AboutEng from "./AboutEng";
 import ProjectsEng from "./ProjectsEng";
 import DesignEng from "./DesignEng";
+import ContactEng from "./ContactEng";
 
 function EnUsHome() {
   return (
@@ -11,6 +12,7 @@ function EnUsHome() {
       <AboutEng />
       <ProjectsEng />
       <DesignEng />
+      <ContactEng />
     </section>
   );
 }

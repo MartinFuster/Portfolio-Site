@@ -150,12 +150,18 @@ body {
   margin-left: 1.5rem;
   transition: all 0.25s linear; }
 
-.small-title {
+.small-title,
+.small-title:visited,
+.small-title:link {
   font-size: 2rem;
+  color: white;
+  text-decoration: none;
   font-weight: 400;
   filter: brightness(80%);
   transition: all 0.25s linear; }
-  .small-title:hover {
+  .small-title:hover,
+  .small-title:visited:hover,
+  .small-title:link:hover {
     cursor: pointer;
     filter: brightness(100%); }
 

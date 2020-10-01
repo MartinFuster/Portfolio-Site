@@ -26,6 +26,7 @@ function ProjectsEng() {
                     className="project-link"
                     href="https://martinfusterappleclone.herokuapp.com/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <div className="small-title-alt title-link">
                       Visit live webiste
@@ -43,9 +44,14 @@ function ProjectsEng() {
                     alt="Apple Website"
                     className="tablet-carousel"
                   />
-                  <h3 className="title small-title">
+                  <a
+                    href="https://github.com/MartinFuster/apple-clone"
+                    target="_blank"
+                    className="title small-title"
+                    rel="noopener noreferrer"
+                  >
                     Source Code <i className="fab fa-github github-icon"></i>
-                  </h3>
+                  </a>
                 </div>
               </div>
             </div>
@@ -65,6 +71,7 @@ function ProjectsEng() {
                     className="project-link"
                     href="https://stocker-eng.herokuapp.com/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <div className="small-title-alt title-link">
                       Visit live webiste
@@ -82,9 +89,14 @@ function ProjectsEng() {
                     alt="Stockr Website"
                     className="tablet-carousel"
                   />
-                  <h3 className="title small-title">
+                  <a
+                    href="https://github.com/MartinFuster/stockr-eng"
+                    className="title small-title"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Source Code <i className="fab fa-github github-icon"></i>
-                  </h3>
+                  </a>
                 </div>
               </div>
             </div>

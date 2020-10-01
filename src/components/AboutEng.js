@@ -30,12 +30,16 @@ function AboutEng() {
             </div>
             <h3 className="title">Any type of query or discussion?</h3>
             <div className="text">Lets have a chat!</div>
+
             <div className="resume-contact u-no-margin about-contact">
               martinfuster3<span className="u-no-decoration">@</span>gmail.com
-              <a
-                className="fas fa-envelope envelope-icon"
-                href="mailto:martinfuster3@gmail.com"
-              ></a>
+              {
+                //eslint-disable-next-line
+                <a
+                  className="fas fa-envelope envelope-icon"
+                  href="mailto:martinfuster3@gmail.com"
+                ></a>
+              }
             </div>
           </div>
         </div>

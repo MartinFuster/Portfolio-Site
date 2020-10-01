@@ -1,8 +1,10 @@
 import React from "react";
+const Scroll = require("react-scroll");
+const scroller = Scroll.scroller;
 
 function AboutEng() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="container">
         <div className="about-content">
           <div className="about-info-section">
@@ -22,7 +24,17 @@ function AboutEng() {
               courses alongside college and built a strong set of tools to work
               with.
             </div>
-            <div className="btn">Contact Me</div>
+            <div
+              className="btn"
+              onClick={() => {
+                scroller.scrollTo("contact", {
+                  duration: 1250,
+                  smooth: "easeOutCubic",
+                });
+              }}
+            >
+              Contact Me
+            </div>
           </div>
           <div className="about-contact-info">
             <div className="title-container">

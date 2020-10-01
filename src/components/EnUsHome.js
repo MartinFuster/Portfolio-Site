@@ -4,6 +4,7 @@ import AboutEng from "./AboutEng";
 import ProjectsEng from "./ProjectsEng";
 import DesignEng from "./DesignEng";
 import ContactEng from "./ContactEng";
+import Copyright from "./Copyright";
 
 function EnUsHome() {
   return (
@@ -13,6 +14,7 @@ function EnUsHome() {
       <ProjectsEng />
       <DesignEng />
       <ContactEng />
+      <Copyright />
     </section>
   );
 }

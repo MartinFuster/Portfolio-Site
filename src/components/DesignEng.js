@@ -3,7 +3,7 @@ import planeTablet from "../images/plane-tablet.png";
 
 function DesignEng() {
   return (
-    <section className="design">
+    <section className="design" id="design">
       <div className="container">
         <div className="content-design">
           <div className="info-section-design">

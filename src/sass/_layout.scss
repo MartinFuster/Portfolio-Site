@@ -133,8 +133,14 @@
 
 .contact-form {
   margin-left: auto;
+  min-width: 55rem;
 }
 
 .input-box {
   display: flex;
+}
+
+.copyright {
+  padding: 3rem 0;
+  background-color: var(--color-primary);
 }

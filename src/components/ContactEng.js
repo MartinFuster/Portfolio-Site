@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import { Formik } from "formik";
+import * as Yup from "yup";
+import axios from "axios";
+import Error from "./Error";
 
 function ContactEng() {
+  const [emailErr, setEmailErr] = useState(false);
+  const [emailSuccess, setEmailSuccess] = useState(false);
+
+  const nameRegex = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g;
+
+  const validationSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(2, "Must have two characters")
+      .max(255, "The name is too long")
+      .matches(nameRegex, "You can only use alphabetic characters")
+      .required("Must enter a name"),
+    email: Yup.string()
+      .email("Must be a valid email address")
+      .max(255, "The email is too long")
+      .required("Must enter an email"),
+    message: Yup.string()
+      .min(40, "Must have at least 40 characters")
+      .max(999, "The message is too long")
+      .required("Must enter a message"),
+  });
+
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -33,35 +58,150 @@ function ContactEng() {
               Contact Me
             </div>{" "}
             <h3 className="title">Send Me a Message.</h3>
-            <form action="post">
-              <div className="input-box">
-                <input type="text" className="input" placeholder="Name" />
-                <div className="input-icon">
-                  <i className="far fa-user"></i>
-                </div>
-              </div>
+            <Formik
+              initialValues={{ name: "", email: "", message: "" }}
+              validationSchema={validationSchema}
+              onSubmit={(values, { setSubmitting, resetForm }) => {
+                setSubmitting(true);
+                const submitValues = {
+                  name: values.name,
+                  email: values.email,
+                  message: values.message,
+                };
+                axios
+                  .post("/", submitValues)
+                  .then(function (response) {
+                    setEmailSuccess(true);
+                    setSubmitting(false);
+                    resetForm();
+                  })
+                  .catch(function (err) {
+                    setEmailErr(true);
+                    setSubmitting(false);
+                    resetForm();
+                  });
+              }}
+            >
+              {({
+                values,
+                errors,
+                touched,
+                handleChange,
+                handleBlur,
+                handleSubmit,
+                isSubmitting,
+              }) => (
+                <form action="post" onSubmit={handleSubmit}>
+                  <div className="input-box">
+                    <input
+                      autoComplete="off"
+                      type="text"
+                      className={
+                        touched.name && errors.name
+                          ? "input has-error"
+                          : touched.name && !errors.name
+                          ? "input hasnt-error"
+                          : "input"
+                      }
+                      placeholder="Name"
+                      id="name"
+                      name="name"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.name}
+                      onClick={() => {
+                        if (emailErr || emailSuccess) {
+                          setEmailErr(false);
+                          setEmailSuccess(false);
+                        }
+                      }}
+                    />
+                    <div className="input-icon">
+                      <i className="far fa-user"></i>
+                    </div>
+                  </div>
+                  <Error touched={touched.name} message={errors.name} />
+                  <div className="input-box">
+                    <input
+                      autoComplete="off"
+                      type="email"
+                      id="email"
+                      name="email"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.email}
+                      className={
+                        touched.email && errors.email
+                          ? "input has-error"
+                          : touched.email && !errors.email
+                          ? "input hasnt-error"
+                          : "input"
+                      }
+                      placeholder="Email"
+                      onClick={() => {
+                        if (emailErr || emailSuccess) {
+                          setEmailErr(false);
+                          setEmailSuccess(false);
+                        }
+                      }}
+                    />
+                    <div className="input-icon">
+                      <i className="far fa-envelope"></i>
+                    </div>
+                  </div>
+                  <Error touched={touched.email} message={errors.email} />
 
-              <div className="input-box">
-                <input type="text" className="input" placeholder="Email" />
-                <div className="input-icon">
-                  <i className="far fa-envelope"></i>
-                </div>
-              </div>
-
-              <div className="input-box">
-                <textarea
-                  type="textarea"
-                  className="input input-textarea"
-                  placeholder="Message"
-                />
-                <div className="input-icon">
-                  <i className="far fa-edit"></i>
-                </div>
-              </div>
-              <button className="btn submit-btn" type="submit">
-                Submit
-              </button>
-            </form>
+                  <div className="input-box">
+                    <textarea
+                      autoComplete="off"
+                      type="textarea"
+                      id="message"
+                      name="message"
+                      className={
+                        touched.message && errors.message
+                          ? "input input-textarea has-error"
+                          : touched.message && !errors.message
+                          ? "input input-textarea hasnt-error"
+                          : "input input-textarea"
+                      }
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.message}
+                      placeholder="Message"
+                      onClick={() => {
+                        if (emailErr || emailSuccess) {
+                          setEmailErr(false);
+                          setEmailSuccess(false);
+                        }
+                      }}
+                    />
+                    <div className="input-icon">
+                      <i className="far fa-edit"></i>
+                    </div>
+                  </div>
+                  <Error touched={touched.message} message={errors.message} />
+                  {emailSuccess ? (
+                    <div className="status-msg success">
+                      Thank you for contacting me, I will reach out as soon as
+                      possible!
+                    </div>
+                  ) : emailErr ? (
+                    <div className="status-msg err">
+                      There has been an error, please try again later.
+                    </div>
+                  ) : null}
+                  <div className="input-box">
+                    <button
+                      className="btn submit-btn"
+                      type="submit"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Submitting..." : "Submit"}
+                    </button>
+                  </div>
+                </form>
+              )}
+            </Formik>
           </div>
         </div>
       </div>

@@ -267,6 +267,35 @@ body {
   font-weight: 500;
   color: var(--text-color); }
 
+.error-text {
+  font-size: 1.6rem;
+  color: var(--color-secondary);
+  margin: 0.5rem 0; }
+
+.hasnt-error {
+  box-shadow: 0 0 0.3rem 0.1rem #00feba; }
+
+.has-error {
+  box-shadow: 0 0 0.3rem 0.1rem #f26c4f;
+  margin-bottom: 0rem; }
+
+.status-msg {
+  text-align: center;
+  padding: 1.5rem 5rem 1.5rem 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  width: 100%;
+  font-weight: 500;
+  border: none; }
+
+.err {
+  background-color: var(--color-secondary);
+  color: white; }
+
+.success {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary); }
+
 .intro {
   position: relative;
   background-color: var(--color-primary);
@@ -379,7 +408,7 @@ body {
 
 .contact-form {
   margin-left: auto;
-  min-width: 55rem; }
+  min-width: 60rem; }
 
 .input-box {
   display: flex; }

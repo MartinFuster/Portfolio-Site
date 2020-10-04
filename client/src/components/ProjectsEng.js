@@ -15,7 +15,7 @@ function ProjectsEng() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="container">
-              <div className="projects-content">
+              <div className="projects-content" data-aos="fadeUpSlow">
                 <div className="projects-text apple-text">
                   <div className="title-container">
                     <div className="small-title-alt">Project</div>

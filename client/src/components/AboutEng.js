@@ -8,23 +8,27 @@ function AboutEng() {
       <div className="container">
         <div className="about-content">
           <div className="about-info-section">
-            <div className="title-container">
+            <div className="title-container" data-aos="fadeUpSlow">
               <div className="small-title-alt title-main-color">About Me</div>{" "}
               <div className="bar bar-small"></div>
             </div>
-            <h3 className="title">How did i get into programming?</h3>
-            <div className="text">
+            <h3 className="title" data-aos="fadeUpSlow" data-aos-delay="1000">
+              How did i get into programming?
+            </h3>
+            <div className="text" data-aos="fadeUpSlow" data-aos-delay="1500">
               I fell in love of coding when I was 17 years old and had to do a
               website for a school project. it was supposed to be a year-long
               process, but I was so excited I finished it in a week.
             </div>
-            <div className="text">
+            <div className="text" data-aos="fadeUpSlow" data-aos-delay="2000">
               From there I started to learn about different languages,
               frameworks and plugins to make better web apps, I did a few Udemy
               courses alongside college and built a strong set of tools to work
               with.
             </div>
             <div
+              data-aos="fadeUpSlow"
+              data-aos-delay="2500"
               className="btn"
               onClick={() => {
                 scroller.scrollTo("contact", {
@@ -40,10 +44,29 @@ function AboutEng() {
             <div className="title-container">
               <div className="small-title-alt title-main-color">&nbsp;</div>{" "}
             </div>
-            <h3 className="title">Any type of query or discussion?</h3>
-            <div className="text">Lets have a chat!</div>
+            <h3
+              className="title"
+              data-aos="fadeUpSlow"
+              data-aos="fadeUpSlow"
+              data-aos-delay="3500"
+            >
+              Any type of query or discussion?
+            </h3>
+            <div
+              className="text"
+              data-aos="fadeUpSlow"
+              data-aos="fadeUpSlow"
+              data-aos-delay="4000"
+            >
+              Lets have a chat!
+            </div>
 
-            <div className="resume-contact u-no-margin about-contact">
+            <div
+              data-aos="fadeUpSlow"
+              data-aos-delay="4500"
+              className="resume-contact u-no-margin about-contact"
+              data-aos="fadeUpSlow"
+            >
               martinfuster3<span className="u-no-decoration">@</span>gmail.com
               {
                 //eslint-disable-next-line

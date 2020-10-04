@@ -4,7 +4,7 @@ const scroller = Scroll.scroller;
 
 function Navbar() {
   return (
-    <nav className="nav">
+    <nav className="nav" data-aos="fade">
       <div className="main-box">M.</div>
       <div className="links">
         <div

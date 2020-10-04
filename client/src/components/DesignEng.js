@@ -7,12 +7,18 @@ function DesignEng() {
       <div className="container">
         <div className="content-design">
           <div className="info-section-design">
-            <h3 className="title color-secondary">Design.</h3>
-            <div className="text">
+            <h3
+              className="title color-secondary"
+              data-aos="fade"
+              data-aos-delay="1500"
+            >
+              Design.
+            </h3>
+            <div className="text" data-aos="fade" data-aos-delay="2250">
               I always loved a clean and simple design, so I learned how to do
               them, and got quite good at doing so!
             </div>
-            <div className="text">
+            <div className="text" data-aos="fade" data-aos-delay="2750">
               I did multiple designs for my Digital Agency and clients, which
               you can find on Instagram{" "}
               <a
@@ -28,6 +34,8 @@ function DesignEng() {
           </div>
           <div className="image-section">
             <img
+              data-aos="tablet"
+              data-aos-delay="500"
               src={planeTablet}
               alt="Travel Concept Design"
               className="plane-tablet"

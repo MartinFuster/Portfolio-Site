@@ -31,9 +31,20 @@ function ContactEng() {
       <div className="container">
         <div className="contact-content">
           <div className="contact-details">
-            <div className="small-title-alt title-main-color">Contact Info</div>
-            <h3 className="title">Talk To Me.</h3>
-            <div className="info-box">
+            <div
+              className="small-title-alt title-main-color"
+              data-aos="fadeUpSlow"
+            >
+              Contact Info
+            </div>
+            <h3 className="title" data-aos="fadeUpSlow" data-aos-delay="1000">
+              Talk To Me.
+            </h3>
+            <div
+              className="info-box"
+              data-aos="fadeUpSlow"
+              data-aos-delay="1500"
+            >
               <div className="info-icon">
                 <i className="fas fa-mobile-alt phone-icon"></i>
               </div>
@@ -42,7 +53,11 @@ function ContactEng() {
                 <h4 className="title title-small">+54 11-2389-2231</h4>
               </div>
             </div>
-            <div className="info-box">
+            <div
+              className="info-box"
+              data-aos="fadeUpSlow"
+              data-aos-delay="2000"
+            >
               <div className="info-icon">
                 <i className="fas fa-envelope"></i>
               </div>
@@ -54,10 +69,16 @@ function ContactEng() {
           </div>
 
           <div className="contact-form">
-            <div className="small-title-alt title-color-tertiary">
+            <div
+              className="small-title-alt title-color-tertiary"
+              data-aos="fadeUpSlow"
+              data-aos-delay="2500"
+            >
               Contact Me
             </div>{" "}
-            <h3 className="title">Send Me a Message.</h3>
+            <h3 className="title" data-aos="fadeUpSlow" data-aos-delay="3000">
+              Send Me a Message.
+            </h3>
             <Formik
               initialValues={{ name: "", email: "", message: "" }}
               validationSchema={validationSchema}
@@ -92,7 +113,11 @@ function ContactEng() {
                 isSubmitting,
               }) => (
                 <form action="post" onSubmit={handleSubmit}>
-                  <div className="input-box">
+                  <div
+                    className="input-box"
+                    data-aos="fadeUpSlow"
+                    data-aos-delay="3500"
+                  >
                     <input
                       autoComplete="off"
                       type="text"
@@ -121,7 +146,11 @@ function ContactEng() {
                     </div>
                   </div>
                   <Error touched={touched.name} message={errors.name} />
-                  <div className="input-box">
+                  <div
+                    className="input-box"
+                    data-aos="fadeUpSlow"
+                    data-aos-delay="4000"
+                  >
                     <input
                       autoComplete="off"
                       type="email"
@@ -151,7 +180,11 @@ function ContactEng() {
                   </div>
                   <Error touched={touched.email} message={errors.email} />
 
-                  <div className="input-box">
+                  <div
+                    className="input-box"
+                    data-aos="fadeUpSlow"
+                    data-aos-delay="4500"
+                  >
                     <textarea
                       autoComplete="off"
                       type="textarea"
@@ -192,6 +225,8 @@ function ContactEng() {
                   ) : null}
                   <div className="input-box">
                     <button
+                      data-aos="fadeUpSlow"
+                      data-aos-delay="5000"
                       className="btn submit-btn"
                       type="submit"
                       disabled={isSubmitting}

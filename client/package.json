@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "aos": "^2.3.4",
     "axios": "^0.20.0",
     "formik": "^2.1.7",
     "gsap": "^3.5.1",
@@ -26,6 +27,7 @@
     "compile:sass": "node-sass src/sass/main.scss src/App.css -w",
     "prefix:css": "postcss --use autoprefixer -b \"last 5 versions\" src/App.css -o src/App.css"
   },
+  "proxy": "http://localhost:8080",
   "eslintConfig": {
     "extends": "react-app"
   },

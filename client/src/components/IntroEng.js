@@ -7,7 +7,7 @@ function IntroEng() {
     <section className="intro">
       <div className="container">
         <Navbar />
-        <div className="content-design">
+        <div className="content-design" data-aos="fadeUpSlow">
           <div className="name-content u-unselectable-text">
             <div className="name">Martin</div>
             <div className="last-name">Fuster</div>

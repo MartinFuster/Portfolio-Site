@@ -2,7 +2,7 @@ import React from "react";
 const Scroll = require("react-scroll");
 const scroller = Scroll.scroller;
 
-function AboutEng() {
+function AboutEs() {
   const width = window.innerWidth;
   return (
     <section className="about" id="about">
@@ -10,7 +10,7 @@ function AboutEng() {
         <div className="about-content">
           <div className="about-info-section">
             <div className="title-container" data-aos="fadeUpSlow">
-              <div className="small-title-alt title-main-color">About Me</div>{" "}
+              <div className="small-title-alt title-main-color">Acerca</div>{" "}
               <div className="bar bar-small"></div>
             </div>
             <h3
@@ -18,26 +18,27 @@ function AboutEng() {
               data-aos="fadeUpSlow"
               data-aos-delay={width > 900 ? "1000" : "0"}
             >
-              How did i get into programming?
+              ¿Como comencé a programar?
             </h3>
             <div
               className="text"
               data-aos="fadeUpSlow"
               data-aos-delay={width > 900 ? "1500" : "0"}
             >
-              I fell in love of coding when I was 17 years old and had to do a
-              website for a school project. it was supposed to be a year-long
-              process, but I was so excited I finished it in a week.
+              Me enamoré de la programacion cuando tenia 17 años y tenia que
+              crear un sitio web para un proyecto de la escuela. Se suponia que
+              iba a ser un proyecto anual, pero estaba tan emocionado que lo
+              completé en una semana.
             </div>
             <div
               className="text"
               data-aos="fadeUpSlow"
               data-aos-delay={width > 900 ? "2000" : "0"}
             >
-              From there I started to learn about different languages,
-              frameworks and plugins to make better web apps, I did a few Udemy
-              courses alongside college and built a strong set of tools to work
-              with.
+              Desde ahí empeze a aprender sobre diferentes lenguajes, frameworks
+              y plugins para crear mejores aplicaciones web, hice algunos cursos
+              de Udemy a la par con la universidad y construí un fuerte set de
+              herramientas con las que trabajar.
             </div>
             <div
               data-aos="fadeUpSlow"
@@ -50,7 +51,7 @@ function AboutEng() {
                 });
               }}
             >
-              Contact Me
+              Contactame
             </div>
           </div>
           <div className="about-contact-info">
@@ -58,10 +59,10 @@ function AboutEng() {
               <div className="small-title-alt title-main-color">&nbsp;</div>{" "}
             </div>
             <h3 className="title" data-aos="fadeUpSlow" data-aos-delay="3500">
-              Any type of query or discussion?
+              ¿Algun tipo de duda o discusión?
             </h3>
             <div className="text" data-aos="fadeUpSlow" data-aos-delay="4000">
-              Lets have a chat!
+              ¡Tengamos una charla!
             </div>
 
             <div
@@ -85,4 +86,4 @@ function AboutEng() {
   );
 }
 
-export default AboutEng;
+export default AboutEs;

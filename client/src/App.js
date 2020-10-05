@@ -5,6 +5,8 @@ import EnUsHome from "./components/EnUsHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CertificateEng from "./components/CertificateEng";
+import EsArHome from "./components/EsArHome";
+import CertificateEs from "./components/CertificateEs";
 
 function App() {
   AOS.init({
@@ -17,7 +19,9 @@ function App() {
       <div>
         <Switch>
           <Route path="/en-us" component={EnUsHome} />
+          <Route path="/es-ar" component={EsArHome} />
           <Route path="/certificate" component={CertificateEng} />
+          <Route path="/certificado" component={CertificateEs} />
         </Switch>
       </div>
     </Router>

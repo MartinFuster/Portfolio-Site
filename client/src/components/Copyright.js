@@ -11,7 +11,7 @@ function Copyright() {
           className="copyright-text"
           data-aos="fade"
           data-aos-delay={width > 900 ? "5500" : "0"}
-          data-anchor-placement="bottom bottom"
+          data-aos-anchor=".input"
         >
           Copyright © {year} Martin Fuster.
         </div>

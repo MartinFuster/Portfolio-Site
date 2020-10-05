@@ -5,7 +5,12 @@ const scroller = Scroll.scroller;
 function Navbar() {
   return (
     <nav className="nav" data-aos="fade">
-      <div className="main-box">M.</div>
+      <div
+        className="main-box"
+        onClick={() => (window.location.href = "/en-us")}
+      >
+        M.
+      </div>
       <div className="links">
         <div
           className="link-box"
@@ -40,7 +45,12 @@ function Navbar() {
         >
           Design
         </div>
-        <div className="link-box">Certificate</div>
+        <div
+          className="link-box"
+          onClick={() => (window.location.href = "/certificate")}
+        >
+          Certificate
+        </div>
         <div className="link-box">CV</div>
         <div
           className="link-box"

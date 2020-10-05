@@ -431,3 +431,20 @@
     color: white;
   }
 }
+
+.certificate-img {
+  width: 100rem;
+  margin-top: 4rem;
+
+  @include media(phone-big) {
+    width: 80rem;
+  }
+
+  @include media(phone-medium) {
+    width: 60rem;
+  }
+
+  @include media(phone-390) {
+    width: 50rem;
+  }
+}

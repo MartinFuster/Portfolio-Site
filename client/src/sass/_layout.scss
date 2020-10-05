@@ -4,6 +4,14 @@
   padding-bottom: 12rem;
 }
 
+.intro-certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .about {
   position: relative;
   background-color: var(--color-primary-dark);
@@ -257,4 +265,10 @@
   @include media(tab) {
     display: none;
   }
+}
+
+.certificate-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

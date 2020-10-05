@@ -395,10 +395,30 @@ body {
   .bars-icon:hover {
     color: white; }
 
+.certificate-img {
+  width: 100rem;
+  margin-top: 4rem; }
+  @media only screen and (max-width: 42.8125em) {
+    .certificate-img {
+      width: 80rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .certificate-img {
+      width: 60rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .certificate-img {
+      width: 50rem; } }
+
 .intro {
   position: relative;
   background-color: var(--color-primary);
   padding-bottom: 12rem; }
+
+.intro-certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
 
 .about {
   position: relative;
@@ -608,6 +628,11 @@ body {
 @media only screen and (max-width: 56.25em) {
   .contact-details {
     display: none; } }
+
+.certificate-box {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .u-unselectable-text {
   -webkit-user-select: none;

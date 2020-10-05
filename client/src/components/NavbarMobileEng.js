@@ -16,7 +16,12 @@ function NavbarMobileEng() {
     <>
       <div className="navbar-mobile">
         <a className="language-changer" href="/es-ar">
-          <div className="main-box">M.</div>
+          <div
+            className="main-box"
+            onClick={() => (window.location.href = "/en-us")}
+          >
+            M.
+          </div>
         </a>
         <div
           className="link-box"
@@ -68,7 +73,12 @@ function NavbarMobileEng() {
           >
             Design
           </div>
-          <div className="link-box link-box-mobile">Certificate</div>
+          <div
+            className="link-box link-box-mobile"
+            onClick={() => (window.location.href = "/certificate")}
+          >
+            Certificate
+          </div>
           <div className="link-box link-box-mobile">CV</div>
           <div
             className="link-box link-box-mobile"

@@ -51,6 +51,10 @@
   font-size: 1.4rem;
 }
 
+.world-icon-mobile {
+  font-size: 3rem;
+}
+
 .name-content {
   position: relative;
   color: white;
@@ -59,10 +63,19 @@
   max-width: 60rem;
   line-height: 13.5rem;
   margin-top: 15rem;
+
+  @include media(tab) {
+    font-size: 10rem;
+    margin-top: 10rem;
+    line-height: 11.5rem;
+  }
 }
 
 .last-name {
   margin-left: 12rem;
+  @include media(tab) {
+    margin-left: 10rem;
+  }
 }
 
 .small-title-alt {
@@ -70,6 +83,10 @@
   font-size: 2rem;
   font-weight: 400;
   color: var(--color-tertiary);
+
+  @include media(tab) {
+    min-width: auto;
+  }
 }
 
 .bar {
@@ -77,6 +94,10 @@
   width: 100%;
   margin-left: 2rem;
   background-color: var(--color-tertiary);
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 .title {
@@ -102,6 +123,10 @@
 .arrow {
   position: absolute;
   bottom: 0;
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 .title-main-color {
@@ -146,11 +171,19 @@
 
 .title-link {
   min-width: auto;
+
+  @include media(tab) {
+    text-align: center !important;
+  }
 }
 
 .right-arrow {
   margin-left: 1.5rem;
   transition: all 0.25s linear;
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 .small-title,
@@ -180,6 +213,29 @@
 .tablet-carousel {
   width: 85rem;
   object-fit: contain;
+
+  @include media(desktop-1600) {
+    width: 70rem;
+  }
+
+  @include media(desktop-1300) {
+    width: 60rem;
+  }
+
+  @include media(desktop-1300) {
+    display: none;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  @include media(desktop-1600) {
+    width: 5rem;
+
+    &:hover {
+      width: 5rem;
+    }
+  }
 }
 
 .carousel-item {
@@ -188,6 +244,10 @@
 
 .plane-tablet {
   width: 74rem;
+
+  @include media(desktop-1300) {
+    display: none;
+  }
 }
 
 .underline {
@@ -362,4 +422,12 @@
 [data-aos-delay="5500"][data-aos].aos-animate,
 [data-aos][data-aos][data-aos-delay="5500"].aos-animate {
   transition-delay: 5.5s;
+}
+
+.bars-icon {
+  font-size: 3rem;
+
+  &:hover {
+    color: white;
+  }
 }

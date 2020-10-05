@@ -26,6 +26,8 @@ function ContactEng() {
       .required("Must enter a message"),
   });
 
+  const width = window.innerWidth;
+
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -72,11 +74,15 @@ function ContactEng() {
             <div
               className="small-title-alt title-color-tertiary"
               data-aos="fadeUpSlow"
-              data-aos-delay="2500"
+              data-aos-delay={width > 900 ? "2500" : "0"}
             >
               Contact Me
             </div>{" "}
-            <h3 className="title" data-aos="fadeUpSlow" data-aos-delay="3000">
+            <h3
+              className="title"
+              data-aos="fadeUpSlow"
+              data-aos-delay={width > 900 ? "3000" : "0"}
+            >
               Send Me a Message.
             </h3>
             <Formik
@@ -116,7 +122,7 @@ function ContactEng() {
                   <div
                     className="input-box"
                     data-aos="fadeUpSlow"
-                    data-aos-delay="3500"
+                    data-aos-delay={width > 900 ? "3500" : "0"}
                   >
                     <input
                       autoComplete="off"
@@ -149,7 +155,7 @@ function ContactEng() {
                   <div
                     className="input-box"
                     data-aos="fadeUpSlow"
-                    data-aos-delay="4000"
+                    data-aos-delay={width > 900 ? "4000" : "0"}
                   >
                     <input
                       autoComplete="off"
@@ -183,7 +189,7 @@ function ContactEng() {
                   <div
                     className="input-box"
                     data-aos="fadeUpSlow"
-                    data-aos-delay="4500"
+                    data-aos-delay={width > 900 ? "4500" : "0"}
                   >
                     <textarea
                       autoComplete="off"
@@ -226,7 +232,7 @@ function ContactEng() {
                   <div className="input-box">
                     <button
                       data-aos="fadeUpSlow"
-                      data-aos-delay="5000"
+                      data-aos-delay={width > 900 ? "5000" : "0"}
                       className="btn submit-btn"
                       type="submit"
                       disabled={isSubmitting}

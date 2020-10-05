@@ -8,6 +8,203 @@
   --text-color: #c4c4c4;
 }
 
+@mixin media($breakpoint) {
+  @if $breakpoint == desktop-1720 {
+    @media only screen and (max-width: 107.5em) {
+      @content;
+      //1720px
+    }
+  }
+
+  @if $breakpoint == desktop-1600 {
+    @media only screen and (max-width: 100em) {
+      @content;
+      //1600px
+    }
+  }
+
+  @if $breakpoint == desktop-1528 {
+    @media only screen and (max-width: 95.5em) {
+      @content;
+      //1528px
+    }
+  }
+
+  @if $breakpoint == desktop-1480 {
+    @media only screen and (max-width: 92.5em) {
+      @content;
+      //1480px
+    }
+  }
+
+  @if $breakpoint == desktop-1400 {
+    @media only screen and (max-width: 87.5em) {
+      @content;
+      //1400px
+    }
+  }
+
+  @if $breakpoint == desktop-1300 {
+    @media only screen and (max-width: 81.25em) {
+      @content;
+      //1300px
+    }
+  }
+
+  @if $breakpoint == tab-big {
+    @media only screen and (max-width: 75.3125em) {
+      @content;
+      //1205px
+    }
+  }
+
+  @if $breakpoint == tab-med {
+    @media only screen and (max-width: 65.3125em) {
+      @content;
+      //1045px
+    }
+  }
+
+  @if $breakpoint == tab-port-big {
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+      //991px
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 60.375em) {
+      @content;
+      //966px
+    }
+  }
+
+  @if $breakpoint == tab-930 {
+    @media only screen and (max-width: 58.125em) {
+      @content;
+      //930px
+    }
+  }
+
+  @if $breakpoint == tab {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+      //900px
+    }
+  }
+
+  @if $breakpoint == tab-850 {
+    @media only screen and (max-width: 53.125em) {
+      @content;
+      //850px
+    }
+  }
+
+  @if $breakpoint == tab-small {
+    @media only screen and (max-width: 49.025em) {
+      @content;
+      //785px
+    }
+  }
+
+  @if $breakpoint == phone-710 {
+    @media only screen and (max-width: 44.375em) {
+      @content;
+      //710px
+    }
+  }
+
+  @if $breakpoint == phone-big {
+    @media only screen and (max-width: 42.8125em) {
+      @content;
+      //685px
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+      //600px
+    }
+  }
+
+  @if $breakpoint == phone-medium {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+      //500px
+    }
+  }
+
+  @if $breakpoint == phone-475 {
+    @media only screen and (max-width: 29.687em) {
+      @content;
+      //475px
+    }
+  }
+
+  @if $breakpoint == phone-448 {
+    @media only screen and (max-width: 28em) {
+      @content;
+      //448px
+    }
+  }
+
+  @if $breakpoint == phone-415 {
+    @media only screen and (max-width: 25.9375em) {
+      @content;
+      //415px
+    }
+  }
+
+  @if $breakpoint == phone-390 {
+    @media only screen and (max-width: 24.375em) {
+      @content;
+      //390px
+    }
+  }
+
+  @if $breakpoint == phone-350 {
+    @media only screen and (max-width: 21.875em) {
+      @content;
+      //350px
+    }
+  }
+
+  @if $breakpoint == phone-335 {
+    @media only screen and (max-width: 20.9375em) {
+      @content;
+      //335px
+    }
+  }
+
+  @if $breakpoint == medium-big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+      //1800px
+    }
+  }
+
+  @if $breakpoint == desktop-2000 {
+    @media only screen and (min-width: 125em) {
+      @content;
+      //2300px
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 143.75em) {
+      @content;
+      //2300px
+    }
+  }
+
+  @if $breakpoint == desktop-2800 {
+    @media only screen and (min-width: 175em) {
+      @content;
+      //2300px
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +220,22 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   overflow-x: hidden;
+
+  @include media(tab-port-big) {
+    font-size: 50%;
+  }
+
+  @include media(tab-small) {
+    font-size: 40%;
+  }
+
+  @include media(medium-big-desktop) {
+    font-size: 70%;
+  }
+
+  @include media(big-desktop) {
+    font-size: 100%;
+  }
 }
 
 body {

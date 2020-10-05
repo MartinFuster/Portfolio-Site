@@ -17,6 +17,52 @@
   color: white !important;
   font-size: 1.9rem;
   padding: 1.5rem 0;
+
+  @include media(tab-port-big) {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  color: white !important;
+  font-size: 1.9rem;
+  padding: 1.5rem 0;
+
+  @include media(tab-port-big) {
+    display: flex;
+  }
+}
+
+.nav-active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.links-mobile {
+  font-size: 3rem;
+}
+
+.link-box-mobile {
+  margin-bottom: 1.5rem;
+}
+
+.close-cross {
+  position: absolute;
+  font-size: 3rem;
+  top: 2.5rem;
+  right: 5.5rem;
 }
 
 .container {
@@ -31,12 +77,20 @@
   margin-left: auto;
   margin-top: 18rem;
   max-width: 42rem;
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 .title-container {
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
+
+  @include media(tab) {
+    justify-content: center;
+  }
 }
 
 .about-info-section {
@@ -45,11 +99,21 @@
 
 .about-content {
   display: flex;
+
+  @include media(tab) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .about-contact-info {
   margin-left: auto;
   max-width: 40rem;
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 .projects {
@@ -70,6 +134,10 @@
     cursor: pointer;
     filter: brightness(110%);
   }
+
+  @include media(tab) {
+    display: block;
+  }
 }
 
 .project-link:hover .right-arrow {
@@ -80,11 +148,27 @@
   display: flex;
   align-items: center;
   height: 70rem;
+
+  @include media(desktop-1600) {
+    justify-content: center;
+  }
+
+  @include media(tab) {
+    flex-direction: column;
+  }
 }
 
 .projects-text {
   min-width: 25rem;
   margin-right: 4rem;
+
+  @include media(desktop-1300) {
+    width: 20rem;
+  }
+
+  @include media(tab) {
+    text-align: center;
+  }
 }
 
 .projects-img {
@@ -92,6 +176,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include media(tab) {
+    display: none;
+  }
 }
 
 .design {
@@ -102,11 +190,20 @@
   background-color: var(--color-primary-dark);
   padding: 8rem 0;
   min-height: 100vh;
+
+  @include media(tab) {
+    min-height: 70vh;
+  }
 }
 
 .content-design {
   display: flex;
   align-items: center;
+
+  @include media(tab) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .info-section-design {
@@ -120,6 +217,11 @@
 
 .contact-content {
   display: flex;
+
+  @include media(tab) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .info-box {
@@ -134,6 +236,12 @@
 .contact-form {
   margin-left: auto;
   min-width: 60rem;
+
+  @include media(tab) {
+    margin-left: 0;
+    text-align: center;
+    min-width: 45rem;
+  }
 }
 
 .input-box {
@@ -143,4 +251,10 @@
 .copyright {
   padding: 3rem 0;
   background-color: var(--color-primary);
+}
+
+.contact-details {
+  @include media(tab) {
+    display: none;
+  }
 }

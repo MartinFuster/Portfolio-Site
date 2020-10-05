@@ -1,12 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
 import arrow from "../images/down-arrow.png";
+import NavbarMobileEng from "./NavbarMobileEng";
 
 function IntroEng() {
   return (
     <section className="intro">
       <div className="container">
         <Navbar />
+        <NavbarMobileEng />
         <div className="content-design" data-aos="fadeUpSlow">
           <div className="name-content u-unselectable-text">
             <div className="name">Martin</div>

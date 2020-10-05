@@ -2,6 +2,7 @@ import React from "react";
 import planeTablet from "../images/plane-tablet.png";
 
 function DesignEng() {
+  const width = window.innerWidth;
   return (
     <section className="design" id="design">
       <div className="container">
@@ -10,15 +11,23 @@ function DesignEng() {
             <h3
               className="title color-secondary"
               data-aos="fade"
-              data-aos-delay="1500"
+              data-aos-delay={width > 900 ? "1500" : "0"}
             >
               Design.
             </h3>
-            <div className="text" data-aos="fade" data-aos-delay="2250">
+            <div
+              className="text"
+              data-aos="fade"
+              data-aos-delay={width > 900 ? "2250" : "0"}
+            >
               I always loved a clean and simple design, so I learned how to do
               them, and got quite good at doing so!
             </div>
-            <div className="text" data-aos="fade" data-aos-delay="2750">
+            <div
+              className="text"
+              data-aos="fade"
+              data-aos-delay={width > 900 ? "2750" : "0"}
+            >
               I did multiple designs for my Digital Agency and clients, which
               you can find on Instagram{" "}
               <a

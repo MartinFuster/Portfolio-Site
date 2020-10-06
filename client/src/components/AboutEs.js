@@ -59,7 +59,7 @@ function AboutEs() {
               <div className="small-title-alt title-main-color">&nbsp;</div>{" "}
             </div>
             <h3 className="title" data-aos="fadeUpSlow" data-aos-delay="3500">
-              ¿Algun tipo de duda o discusión?
+              ¿Algún tipo de duda o discusión?
             </h3>
             <div className="text" data-aos="fadeUpSlow" data-aos-delay="4000">
               ¡Tengamos una charla!

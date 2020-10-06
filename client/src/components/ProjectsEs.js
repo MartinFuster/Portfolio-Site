@@ -65,7 +65,7 @@ function ProjectsEs() {
                   </div>
                   <h3 className="title">Manejador de Stock</h3>
                   <div className="text">
-                    Una aplicacion de manejo de stock para un cliente.
+                    Una aplicación de manejo de stock para un cliente.
                   </div>
                   <a
                     className="project-link"

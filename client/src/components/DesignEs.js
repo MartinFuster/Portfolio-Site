@@ -20,8 +20,8 @@ function DesignEs() {
               data-aos="fade"
               data-aos-delay={width > 900 ? "2250" : "0"}
             >
-              Siempre me encantáron los proyectos limpios y simples, entonces
-              aprendi como hacerlos, ¡y me volvi bastante bueno en ello!
+              Siempre me encantaron los proyectos limpios y simples, entonces
+              aprendí como hacerlos, ¡y me volví bastante bueno en ello!
             </div>
             <div
               className="text"

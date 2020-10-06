@@ -25,7 +25,7 @@ function AboutEs() {
               data-aos="fadeUpSlow"
               data-aos-delay={width > 900 ? "1500" : "0"}
             >
-              Me enamoré de la programacion cuando tenia 17 años y tenia que
+              Me enamoré de la programacion cuando tenia 17 años y tuve que
               crear un sitio web para un proyecto de la escuela. Se suponia que
               iba a ser un proyecto anual, pero estaba tan emocionado que lo
               completé en una semana.

@@ -1,4 +1,5 @@
 import React from "react";
+import cv from "../pdf/Martin-Fuster-CV.pdf";
 const Scroll = require("react-scroll");
 const scroller = Scroll.scroller;
 
@@ -51,7 +52,9 @@ function NavbarEs() {
         >
           Certificado
         </div>
-        <div className="link-box">CV</div>
+        <a className="link-box" href={cv} download>
+          CV
+        </a>
         <div
           className="link-box"
           onClick={() => {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import cv from "../pdf/Martin-Fuster-CV.pdf";
 const Scroll = require("react-scroll");
 const scroller = Scroll.scroller;
 
@@ -79,7 +80,11 @@ function NavbarMobileEs() {
           >
             Certificado
           </div>
-          <div className="link-box link-box-mobile">CV</div>
+          <div className="link-box link-box-mobile">
+            <a className="link-box link-box-mobile" href={cv} download>
+              CV
+            </a>
+          </div>
           <div
             className="link-box link-box-mobile"
             onClick={() => {

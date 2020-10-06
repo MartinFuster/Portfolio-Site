@@ -6,8 +6,12 @@
   font-weight: 300;
 }
 
-.link-box {
+.link-box,
+.link-box:link,
+.link-box:visited {
   margin-right: 3rem;
+  color: white;
+  text-decoration: none;
   transition: all 0.25s linear;
 
   &:hover {

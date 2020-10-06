@@ -65,7 +65,7 @@ function Navbar() {
         </div>
       </div>
       <a className="language-changer" href="/es-ar">
-        ES <i class="fas fa-globe-americas world-icon"></i>
+        ES <i className="fas fa-globe-americas world-icon"></i>
       </a>
     </nav>
   );

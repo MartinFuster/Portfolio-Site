@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import CertificateEng from "./components/CertificateEng";
 import EsArHome from "./components/EsArHome";
 import CertificateEs from "./components/CertificateEs";
+import handleRedirect from "./components/HandleRedirect";
 
 function App() {
   AOS.init({
@@ -22,6 +23,7 @@ function App() {
           <Route path="/es-ar" component={EsArHome} />
           <Route path="/certificate" component={CertificateEng} />
           <Route path="/certificado" component={CertificateEs} />
+          <Route component={handleRedirect} />
         </Switch>
       </div>
     </Router>

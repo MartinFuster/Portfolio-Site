@@ -65,7 +65,7 @@ function NavbarEs() {
         </div>
       </div>
       <a className="language-changer" href="/en-us">
-        EN <i class="fas fa-globe-europe world-icon"></i>
+        EN <i className="fas fa-globe-europe world-icon"></i>
       </a>
     </nav>
   );

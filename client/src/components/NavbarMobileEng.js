@@ -29,12 +29,12 @@ function NavbarMobileEng() {
             setNavActive(true);
           }}
         >
-          <i class="fas fa-bars bars-icon"></i>
+          <i className="fas fa-bars bars-icon"></i>
         </div>
       </div>
       <animated.div className="nav-active" style={navbarAnimation}>
         <div className="close-cross" onClick={() => setNavActive(false)}>
-          <i class="fas fa-times"></i>
+          <i className="fas fa-times"></i>
         </div>
         <div className="links-mobile">
           <div
@@ -99,7 +99,7 @@ function NavbarMobileEng() {
             }}
           >
             ES{" "}
-            <i class="fas fa-globe-americas world-icon world-icon-mobile"></i>
+            <i className="fas fa-globe-americas world-icon world-icon-mobile"></i>
           </div>
         </div>
       </animated.div>

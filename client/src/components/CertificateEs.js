@@ -15,7 +15,7 @@ function CertificateEs() {
           <div className="certificate-box" data-aos="fadeUpSlow">
             <img
               src={certificate}
-              alt="certificate image"
+              alt="certificate"
               className="certificate-img"
             />
           </div>

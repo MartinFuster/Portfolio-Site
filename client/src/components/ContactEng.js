@@ -229,10 +229,13 @@ function ContactEng() {
                       There has been an error, please try again later.
                     </div>
                   ) : null}
-                  <div className="input-box">
+                  <div
+                    className="input-box"
+                    data-aos="fadeUpSlow"
+                    data-aos-delay={width > 900 ? "5000" : "0"}
+                    data-aos-anchor=".input"
+                  >
                     <button
-                      data-aos="fadeUpSlow"
-                      data-aos-delay={width > 900 ? "5000" : "0"}
                       className="btn submit-btn"
                       type="submit"
                       disabled={isSubmitting}

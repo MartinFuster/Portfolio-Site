@@ -42,15 +42,18 @@ function AboutEng() {
             <div
               data-aos="fadeUpSlow"
               data-aos-delay={width > 900 ? "2500" : "0"}
-              className="btn"
-              onClick={() => {
-                scroller.scrollTo("contact", {
-                  duration: 1250,
-                  smooth: "easeOutCubic",
-                });
-              }}
             >
-              Contact Me
+              <div
+                className="btn"
+                onClick={() => {
+                  scroller.scrollTo("contact", {
+                    duration: 1250,
+                    smooth: "easeOutCubic",
+                  });
+                }}
+              >
+                Contact Me
+              </div>
             </div>
           </div>
           <div className="about-contact-info">

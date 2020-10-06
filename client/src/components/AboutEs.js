@@ -35,7 +35,7 @@ function AboutEs() {
               data-aos="fadeUpSlow"
               data-aos-delay={width > 900 ? "2000" : "0"}
             >
-              Desde ahí empeze a aprender sobre diferentes lenguajes, frameworks
+              Desde ahí empecé a aprender sobre diferentes lenguajes, frameworks
               y plugins para crear mejores aplicaciones web, hice algunos cursos
               de Udemy a la par con la universidad y construí un fuerte set de
               herramientas con las que trabajar.
